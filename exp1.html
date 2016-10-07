@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student registration</title>
+    <link href="CSS/Exp1.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<h1>
+		Welcome to AIKTC
+	</h1>
+	<form method="post" action="exp1.html">
+	 <fieldset>
+	   <legend>Personal Information</legend>
+		<label for="rollno">Roll no:</label>
+		<input type="text" name="rollno" id="rollno" class="form-input" required="required"><br>
+		
+		<label for="sname">Name:</label>
+		<input type="text" name="sname" id="sname" class="form-input" required="required">
+		
+		<label for="Gender">Gender:</label>
+		<input type="radio" name="gender" id="male" value="male" class="form-input" required="required"><label for="Male"> Male</label>
+		<input type="radio" name="gender" id="female" value="female" class="form-input"><label for="Female" required="required">Female</label><br>
+
+		<label for="address">Address:</label>
+		<textarea cols="15" rows="4" name="address" id="address" class="form-input"></textarea><br>
+
+		<label for="sem">Semester:</label><br>
+		<select name="sem" id="sem" class="form-input">
+			<option value="">----</option>		
+			<option value="1">I</option>
+			<option value="2">II</option>
+			<option value="3">III</option>
+			<option value="4">IV</option>
+			<option value="5">V</option>
+			<option value="6">VI</option>
+			<option value="7">VII</option>
+			<option value="8">VIII</option>
+		</select><br>
+
+		<label for="dob">Date of birth:</label>
+		<input type="date" name="dob" id="dob" class="form-input" required="required"><br>
+	 </fieldset><br>
+	 <fieldset>
+	  <legend>Acadamic Information</legend>
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email" class="form-input" required="required"><br>
+
+		<label for="dept">Department:</label><br>
+		<select name="dept" id="dept" class="form-input">
+			<option value="">----</option>
+			<option value="CO">Computer</option>
+			<option value="CE">Civil</option>
+			<option value="ME">Mechanical</option>
+			<option value="EE">Electrical</option>
+			<option value="EXTC">Electronics and telecomm</option>
+		</select><br>
+
+		<label for="batch">batch:</label>
+		<select name="batch" id="batch" class="form-input">
+			<option value="">----</option>
+			<option value="batch1">Batch I</option>
+			<option value="batch2">Batch II</option>
+			<option value="batch3">Batch III</option>
+			<option value="batch4">Batch IV</option>
+		</select><br>
+	 </fieldset>
+		<input type="submit" id="submit" class="form-button" value="Submit Form" required="required">
+
+	</form>
+</body>
+</html> 
